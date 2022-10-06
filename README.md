@@ -58,5 +58,17 @@ https://kb.objectrocket.com/mongo-db/simple-mongoose-and-node-js-example-1007
 https://www.geeksforgeeks.org/node-js-crud-operations-using-mongoose-and-mongodb-atlas/
 
 
+# Template engine 
+
+https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application
 
 
+# Deploy on vps
+
+https://hocweb.vn/huong-dan-deploy-website-nodejs-len-vps/
+
+https://medium0.com/@panzelva/deploying-express-js-website-to-vps-with-nginx-pm2-and-ubuntu-18-04-8c5d32593211
+
+
+# Deploy on azure
+https://learn.microsoft.com/en-us/azure/app-service/configure-language-nodejs?pivots=platform-linux

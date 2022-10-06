@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 3000
+const path = require("path");
 
 
 app.use(express.json());
@@ -11,9 +12,16 @@ app.use('/api/user', require('./routes/api/user'))
 app.use('/api/movie', require('./routes/api/movie'))
 app.use('/api/auth', require('./routes/api/auth'))
 // app.use('/api/mysql', require('./routes/api/mysql'))
-app.use('/api/mongodb', require('./routes/api/mongodb'))
-app.use('/api/mongoose', require('./routes/api/mongoose'))
+// app.use('/api/mongodb', require('./routes/api/mongodb'))
+// app.use('/api/mongoose', require('./routes/api/mongoose'))
 
+
+app.set('view engine', 'ejs')
+app.set("views", path.join(__dirname, "/templates"));
+
+app.get('/', (req, res) => {
+  res.render('index')
+})
 
 
 app.listen(port, () => {
