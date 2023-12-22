@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  - group: Lib-my-CICD
+  - group: Lib-my-CICD-2
 
 steps:
 - task: NodeTool@0
