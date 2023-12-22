@@ -22,13 +22,8 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-jobs:
-- job: UseVariableGroup
-  displayName: 'Use Variable Group in PowerShell'
-  pool:
-    vmImage: 'windows-latest'
-
-  steps:
-  - powershell: |
-      Write-Host "Accessing Variable from Variable Group: $(api)"
-    displayName: 'PowerShell Task'
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Write your commands here
+      echo $(api)
