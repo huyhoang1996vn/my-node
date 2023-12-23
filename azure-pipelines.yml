@@ -17,11 +17,3 @@ steps:
 - script: |
     npm install
   displayName: 'npm install'
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: 'Azure subscription 1(957d60ec-5ec1-4cca-9abf-81389ae6e19f)'
-    appType: 'webAppLinux'
-    appName: 'steve-node'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    runtimeStack: 'NODE|18-lts'
-    startUpCommand: 'node app.js'
