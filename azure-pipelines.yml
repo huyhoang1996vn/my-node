@@ -32,9 +32,9 @@ steps:
        public/*
     targetFolder: '$(Build.ArtifactStagingDirectory)'
   displayName: 'Copy project files'
-- task: PublishPipelineArtifact@1
+
+- task: PublishBuildArtifacts@1
   inputs:
-    targetPath: '$(Pipeline.Workspace)'
-    artifact: '$(Build.BuildNumber)'
-    publishLocation: 'pipeline'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: '$(Build.BuildNumber)'
+    publishLocation: 'Container'
